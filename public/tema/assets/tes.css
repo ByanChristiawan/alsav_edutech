@@ -1,0 +1,268 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Card 1 */
+#card-1 {
+    position: relative;
+    border-radius: 20px;
+    
+    display: inline-flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+#card-1::before,
+#card-1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+#card-1::before {
+    background:
+        radial-gradient(69.93% 76.78% at 86.7% 59.34%, #9E7C31 0%, #50401E 100%);
+    z-index: 1;
+}
+
+#card-1::after {
+    background-image: url('../assets/images/1.webp');
+    background-position: 30px 70px;
+    z-index: 2;
+}
+
+/* Card 2 */
+#card-2 {
+    position: relative;
+    border-radius: 20px;
+    display: inline-flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+#card-2::before,
+#card-2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+#card-2::before {
+    background:
+        radial-gradient(90.46% 99.89% at 94.08% 66.44%, #9520B5 0%, #CC036D 100%);
+    z-index: 1;
+}
+
+#card-2::after {
+    background-image: url('../assets/images/2.webp');
+    background-position: 30px 70px;
+    z-index: 2;
+}
+
+/* Card 3 */
+#card-3 {
+    position: relative;
+    border-radius: 20px;
+    
+    display: inline-flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+#card-3::before,
+#card-3::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+#card-3::before {
+    background:
+        radial-gradient(69.93% 76.78% at 86.7% 59.34%, #9E7C31 0%, #50401E 100%);
+    z-index: 1;
+}
+
+#card-3::after {
+    background-image: url('../assets/images/3.webp');
+    background-position: 30px 70px;
+    z-index: 2;
+}
+
+/* Card 4 */
+#card-4 {
+    position: relative;
+    border-radius: 20px;
+    
+    display: inline-flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+#card-4::before,
+#card-4::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+#card-4::before {
+    background:
+        radial-gradient(67.47% 75.16% at 86.7% 59.34%, #0FA37F 0%, #014736 100%);
+    z-index: 1;
+}
+
+#card-4::after {
+    background-image: url('../assets/images/4.webp');
+    background-position: 30px 70px;
+    z-index: 2;
+}
+
+/* Card 5 */
+#card-5 {
+    position: relative;
+    border-radius: 20px;
+    
+    display: inline-flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+#card-5::before,
+#card-5::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+#card-5::before {
+    background:
+        radial-gradient(74.6% 86.06% at 75.83% 53.06%, #073149 0%, #071630 100%);
+    z-index: 1;
+}
+
+#card-5::after {
+    background-image: url('../assets/images/5.webp');
+    background-position: 30px 70px;
+    z-index: 2;
+}
+
+/* Card 6 */
+#card-6 {
+    position: relative;
+    border-radius: 20px;
+    
+    display: inline-flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+#card-6::before,
+#card-6::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+#card-6::before {
+    background: #fff;
+    z-index: 1;
+}
+
+#card-6::after {
+    background-image: url('../assets/images/6.webp');
+    background-position: 0px 10px;
+    z-index: 2;
+}
+
+/* animation button */
+#card-1:hover #button,
+#card-2:hover #button,
+#card-3:hover #button,
+#card-4:hover #button,
+#card-5:hover #button,
+#card-6:hover #button {
+    width: 100%;
+}
+
+#button {
+    transition: width 500ms ease-in-out;
+}
+
+.hover-color svg {
+    color: #141414;
+}
+
+.hover-color:hover svg {
+    color: #fff;
+    transition: 500ms;
+}
+
+/* Button Animate Start */
+
+.hover-color:hover {
+    transition: all 0.5s ease-in-out;
+    color: #fff;
+    box-shadow: inset -300px 0 0 0 #141414;
+}
+
+.active {
+    background-color: #141414;
+    color: #ffffff;
+    border-radius: 10px 0px 0px 10px;
+    font-weight: 500;
+}
+
+.actives {
+    height: 44px;
+    flex: none;
+    background-color: #141414;
+    border-radius: 0px 10px 10px 0px;
+}
+  
+.clicked {
+    background-color: #141414;
+    background-image: none;
+}
+  /* Button Animate End */
+
+
+.height-custom {
+    height: 74%;
+}
